@@ -1,14 +1,12 @@
 const userInput = document.querySelector('#userInput');
-const numberOfPrints = document.querySelector('#numberOfPrints');
 const btnPrint = document.querySelector('button');
 const resultList = document.querySelector('#resultPrints');
 
 btnPrint.addEventListener('click', () => {
     resultList.innerHTML = '';
-    const userInputToPrint = userInput.value;
-    const n = numberOfPrints.value;
+    const userInputToPrint = "I am awesome!";
 
-    for(let i = 0; i < n; i++) {
+    for(let i = 0; i < 10; i++) {
         const newLi = document.createElement('li');
         newLi.innerText = `${i + 1}. ${userInputToPrint}`;
         resultList.appendChild(newLi);
